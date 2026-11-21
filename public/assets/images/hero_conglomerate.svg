@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="heroLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F8F7F3" />
+      <stop offset="100%" stop-color="#EDF1F6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#heroLight)" />
+
+  <!-- Global Geometric Coordinate Rings -->
+  <g stroke="#101B35" stroke-opacity="0.06" stroke-width="1">
+    <circle cx="960" cy="540" r="160" />
+    <circle cx="960" cy="540" r="300" />
+    <circle cx="960" cy="540" r="450" />
+    <circle cx="960" cy="540" r="620" />
+    <line x1="960" y1="0" x2="960" y2="1080" />
+    <line x1="0" y1="540" x2="1920" y2="540" />
+  </g>
+
+  <!-- Orbital Sectors Interconnecting Ellipses -->
+  <g stroke="#101B35" stroke-opacity="0.25" stroke-width="1.5" fill="none">
+    <ellipse cx="960" cy="540" rx="660" ry="240" transform="rotate(-15 960 540)" stroke-dasharray="14,8" />
+    <ellipse cx="960" cy="540" rx="660" ry="240" transform="rotate(25 960 540)" stroke="#FF8A00" stroke-opacity="0.35" stroke-dasharray="14,8" />
+  </g>
+
+  <!-- Central Conglomerate Core Crest -->
+  <g transform="translate(960, 540)">
+    <circle cx="0" cy="0" r="100" fill="#FFFFFF" stroke="#101B35" stroke-width="3" />
+    <circle cx="0" cy="0" r="80" fill="#101B35" />
+    <circle cx="0" cy="0" r="35" fill="#FF8A00" />
+  </g>
+
+  <!-- 9 Sector Satellite Emblems -->
+  <!-- 1. Construction -->
+  <g transform="translate(420, 320)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#FF8A00" stroke-width="2.5" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#101B35">01</text>
+    <text x="0" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#101B35">Construction</text>
+  </g>
+
+  <!-- 2. Civil Engineering -->
+  <g transform="translate(680, 210)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#101B35" stroke-width="2.5" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#101B35">02</text>
+    <text x="0" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#101B35">Civil Eng.</text>
+  </g>
+
+  <!-- 3. Mining & Energy -->
+  <g transform="translate(1240, 210)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#FF8A00" stroke-width="2.5" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#101B35">03</text>
+    <text x="0" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#101B35">Mining &amp; Energy</text>
+  </g>
+
+  <!-- 4. Agriculture -->
+  <g transform="translate(1500, 320)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#101B35" stroke-width="2.5" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#101B35">04</text>
+    <text x="0" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#101B35">Agriculture</text>
+  </g>
+
+  <!-- 5. Property Investment -->
+  <g transform="translate(1580, 600)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#FF8A00" stroke-width="2.5" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#101B35">05</text>
+    <text x="0" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#101B35">Property</text>
+  </g>
+
+  <!-- 6. Automotive Repair -->
+  <g transform="translate(1360, 820)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#101B35" stroke-width="2.5" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#101B35">06</text>
+    <text x="0" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#101B35">Automotive</text>
+  </g>
+
+  <!-- 7. Petroleum Products -->
+  <g transform="translate(960, 880)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#FF8A00" stroke-width="2.5" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#101B35">07</text>
+    <text x="0" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#101B35">Petroleum</text>
+  </g>
+
+  <!-- 8. Banking & Financial -->
+  <g transform="translate(560, 820)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#101B35" stroke-width="2.5" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#101B35">08</text>
+    <text x="0" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#101B35">Banking &amp; Finance</text>
+  </g>
+
+  <!-- 9. Information Technology -->
+  <g transform="translate(340, 600)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#FF8A00" stroke-width="2.5" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#101B35">09</text>
+    <text x="0" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#101B35">Info Tech</text>
+  </g>
+
+  <!-- Connecting Rays -->
+  <g stroke="#101B35" stroke-width="1.5" stroke-opacity="0.2">
+    <line x1="960" y1="540" x2="420" y2="320" />
+    <line x1="960" y1="540" x2="680" y2="210" />
+    <line x1="960" y1="540" x2="1240" y2="210" />
+    <line x1="960" y1="540" x2="1500" y2="320" />
+    <line x1="960" y1="540" x2="1580" y2="600" />
+    <line x1="960" y1="540" x2="1360" y2="820" />
+    <line x1="960" y1="540" x2="960" y2="880" />
+    <line x1="960" y1="540" x2="560" y2="820" />
+    <line x1="960" y1="540" x2="340" y2="600" />
+  </g>
+
+  <!-- Editorial Subtitle Tagline -->
+  <text x="960" y="1025" text-anchor="middle" font-family="'Playfair Display', serif" font-size="24" font-style="italic" fill="#101B35" letter-spacing="2">
+    Arise Hope Group • "A light that shines above Everything"
+  </text>
+</svg>

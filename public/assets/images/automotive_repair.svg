@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="autoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F8F7F3" />
+      <stop offset="100%" stop-color="#EEF0F4" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8A00" />
+      <stop offset="100%" stop-color="#FFC400" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#autoBg)" />
+
+  <!-- Technical Architectural Drafting Grid -->
+  <g stroke="#101B35" stroke-opacity="0.06" stroke-width="1">
+    <line x1="0" y1="200" x2="1920" y2="200" />
+    <line x1="0" y1="400" x2="1920" y2="400" />
+    <line x1="0" y1="600" x2="1920" y2="600" />
+    <line x1="0" y1="800" x2="1920" y2="800" />
+    <line x1="0" y1="1000" x2="1920" y2="1000" />
+    <line x1="320" y1="0" x2="320" y2="1080" />
+    <line x1="640" y1="0" x2="640" y2="1080" />
+    <line x1="960" y1="0" x2="960" y2="1080" />
+    <line x1="1280" y1="0" x2="1280" y2="1080" />
+    <line x1="1600" y1="0" x2="1600" y2="1080" />
+  </g>
+
+  <!-- Laser Alignment Overhead Calibration Rig -->
+  <g stroke="#101B35" stroke-opacity="0.25" stroke-width="2">
+    <line x1="280" y1="180" x2="1640" y2="180" />
+    <line x1="400" y1="120" x2="1520" y2="120" />
+    <line x1="280" y1="180" x2="180" y2="720" stroke-dasharray="6,6" />
+    <line x1="1640" y1="180" x2="1740" y2="720" stroke-dasharray="6,6" />
+  </g>
+
+  <!-- Precision Calibrated Laser Rays -->
+  <line x1="560" y1="180" x2="700" y2="700" stroke="#FF8A00" stroke-width="2" stroke-opacity="0.8" />
+  <line x1="1360" y1="180" x2="1220" y2="700" stroke="#FF8A00" stroke-width="2" stroke-opacity="0.8" />
+  <line x1="960" y1="180" x2="960" y2="680" stroke="#1FD2FF" stroke-width="2" stroke-opacity="0.7" />
+
+  <!-- Vehicle Chassis Architectural Blueprint Elevation -->
+  <g transform="translate(460, 400)">
+    <!-- Chassis Contour -->
+    <path d="M 120,280 C 180,230 320,210 480,200 C 620,110 720,110 840,200 C 920,210 980,240 1020,280 C 980,310 920,320 840,330 C 680,340 400,340 240,330 Z" 
+          fill="#FFFFFF" fill-opacity="0.85" stroke="#101B35" stroke-width="3" />
+    
+    <!-- Roofline & Glasshouse -->
+    <path d="M 380,205 C 460,120 560,95 680,95 C 760,95 820,135 860,205" 
+          fill="none" stroke="#FF8A00" stroke-width="3" />
+    
+    <!-- Structural Bulkheads -->
+    <line x1="380" y1="205" x2="380" y2="320" stroke="#101B35" stroke-opacity="0.4" stroke-width="2" />
+    <line x1="520" y1="115" x2="520" y2="330" stroke="#101B35" stroke-opacity="0.4" stroke-width="2" />
+    <line x1="680" y1="95" x2="680" y2="335" stroke="#101B35" stroke-width="2.5" />
+    <line x1="820" y1="155" x2="820" y2="325" stroke="#101B35" stroke-opacity="0.4" stroke-width="2" />
+
+    <!-- Chassis Laser Jig Targets -->
+    <circle cx="180" cy="270" r="7" fill="#FF8A00" />
+    <circle cx="480" cy="200" r="7" fill="#101B35" />
+    <circle cx="840" cy="200" r="7" fill="#101B35" />
+    <circle cx="960" cy="270" r="7" fill="#FF8A00" />
+  </g>
+
+  <!-- Editorial Executive Badge Cards -->
+  <g font-family="'Plus Jakarta Sans', sans-serif">
+    <!-- Top Left Badge -->
+    <rect x="80" y="80" width="420" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <text x="110" y="120" font-size="12" font-weight="bold" fill="#FF8A00" letter-spacing="2">SECTOR 06 • AUTOMOTIVE ENGINEERING</text>
+    <text x="110" y="155" font-size="22" font-weight="bold" font-family="'Playfair Display', serif" fill="#101B35">Precision Chassis Restoration</text>
+    <text x="110" y="190" font-size="13" fill="#5A6474">3D Computerized Jigs • OEM Factory Tolerances</text>
+
+    <!-- Top Right Badge -->
+    <rect x="1420" y="80" width="420" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <text x="1450" y="120" font-size="12" font-weight="bold" fill="#101B35" letter-spacing="2">DOWNDRAFT CLEANROOM</text>
+    <text x="1450" y="155" font-size="22" font-weight="bold" font-family="'Playfair Display', serif" fill="#101B35">Robotic Refinishing</text>
+    <text x="1450" y="190" font-size="13" fill="#5A6474">Eco-Friendly Waterborne • Commercial Fleet Care</text>
+  </g>
+
+  <!-- Bottom Editorial Watermark -->
+  <text x="960" y="990" text-anchor="middle" font-family="'Playfair Display', serif" font-size="26" font-style="italic" fill="#101B35" fill-opacity="0.35">
+    Arise Hope Group • Automotive Repair, Panel Beating &amp; Fleet Care
+  </text>
+</svg>

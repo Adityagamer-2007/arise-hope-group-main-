@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="hqSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F8F7F3" />
+      <stop offset="100%" stop-color="#EAEFF5" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#hqSky)" />
+
+  <!-- Distant Financial Skyline Silhouettes -->
+  <g fill="#D8DFEA" opacity="0.5">
+    <rect x="140" y="480" width="160" height="420" />
+    <rect x="340" y="440" width="180" height="460" />
+    <polygon points="340,440 430,360 520,440" />
+    <rect x="1420" y="420" width="200" height="480" />
+    <rect x="1660" y="470" width="150" height="430" />
+  </g>
+
+  <!-- Central Corporate Tower Architectural Façade -->
+  <polygon points="640,940 1280,940 1200,200 720,200" fill="#FFFFFF" stroke="#101B35" stroke-width="2.5" />
+  <line x1="960" y1="200" x2="960" y2="70" stroke="#101B35" stroke-width="4" />
+  <circle cx="960" cy="70" r="9" fill="#FF8A00" />
+
+  <!-- Horizontal Mullion Louvres -->
+  <g stroke="#101B35" stroke-opacity="0.25" stroke-width="1.5">
+    <line x1="710" y1="280" x2="1210" y2="280" />
+    <line x1="700" y1="360" x2="1220" y2="360" />
+    <line x1="690" y1="440" x2="1230" y2="440" />
+    <line x1="680" y1="520" x2="1240" y2="520" />
+    <line x1="670" y1="600" x2="1250" y2="600" />
+    <line x1="660" y1="680" x2="1260" y2="680" />
+    <line x1="650" y1="760" x2="1270" y2="760" />
+    <line x1="640" y1="840" x2="1280" y2="840" />
+  </g>
+
+  <!-- Vertical Atrium Lines -->
+  <line x1="960" y1="200" x2="960" y2="940" stroke="#FF8A00" stroke-width="3" />
+  <line x1="840" y1="200" x2="800" y2="940" stroke="#101B35" stroke-width="1.5" stroke-opacity="0.3" />
+  <line x1="1080" y1="200" x2="1120" y2="940" stroke="#101B35" stroke-width="1.5" stroke-opacity="0.3" />
+
+  <!-- Corporate Plaza Infinity Reflection Feature -->
+  <polygon points="420,940 1500,940 1720,1080 200,1080" fill="#E8EDF4" stroke="#101B35" stroke-width="1.5" />
+  <line x1="960" y1="940" x2="960" y2="1080" stroke="#FF8A00" stroke-width="2" />
+
+  <!-- Editorial Info Cards -->
+  <g font-family="'Plus Jakarta Sans', sans-serif">
+    <rect x="80" y="80" width="460" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <text x="110" y="120" font-size="12" font-weight="bold" fill="#FF8A00" letter-spacing="2">GROUP HEADQUARTERS • EST. 2020</text>
+    <text x="110" y="155" font-size="22" font-weight="bold" font-family="'Playfair Display', serif" fill="#101B35">Cosmo City, Johannesburg</text>
+    <text x="110" y="190" font-size="13" fill="#5A6474">59 Kentucky Crescent • Gauteng, South Africa</text>
+
+    <rect x="1380" y="80" width="460" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <text x="1410" y="120" font-size="12" font-weight="bold" fill="#101B35" letter-spacing="2">CORPORATE GOVERNANCE</text>
+    <text x="1410" y="155" font-size="22" font-weight="bold" font-family="'Playfair Display', serif" fill="#101B35">Independent Board Oversight</text>
+    <text x="1410" y="190" font-size="13" fill="#5A6474">Founder Chaired • Audit, Risk &amp; Remuneration</text>
+  </g>
+
+  <text x="960" y="1030" text-anchor="middle" font-family="'Playfair Display', serif" font-size="26" font-style="italic" fill="#101B35" fill-opacity="0.35">
+    Arise Hope Group • Corporate Headquarters, Cosmo City, Johannesburg
+  </text>
+</svg>

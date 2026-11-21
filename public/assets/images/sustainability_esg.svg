@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="esgSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F8F7F3" />
+      <stop offset="100%" stop-color="#E8ECE9" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#esgSky)" />
+
+  <!-- Harmonious Rolling Hills -->
+  <path d="M 0,720 Q 480,640 960,680 T 1920,660 L 1920,1080 L 0,1080 Z" fill="#E2EAE4" />
+  <path d="M 0,780 Q 520,730 1100,770 T 1920,730 L 1920,1080 L 0,1080 Z" fill="#D3E0D6" />
+
+  <!-- Clean Solar Photovoltaic Farm Grid -->
+  <g stroke="#101B35" stroke-opacity="0.35" stroke-width="1.5">
+    <polygon points="300,820 480,820 440,890 240,890" fill="#FFFFFF" />
+    <polygon points="520,820 700,820 660,890 460,890" fill="#FFFFFF" />
+    <polygon points="740,820 920,820 880,890 680,890" fill="#FFFFFF" />
+
+    <polygon points="200,910 420,910 360,1010 120,1010" fill="#F4F6F4" />
+    <polygon points="460,910 680,910 620,1010 380,1010" fill="#F4F6F4" />
+    <polygon points="720,910 940,910 880,1010 640,1010" fill="#F4F6F4" />
+
+    <line x1="220" y1="855" x2="460" y2="855" stroke="#FF8A00" stroke-width="1.5" />
+    <line x1="440" y1="855" x2="680" y2="855" stroke="#FF8A00" stroke-width="1.5" />
+    <line x1="660" y1="855" x2="900" y2="855" stroke="#FF8A00" stroke-width="1.5" />
+  </g>
+
+  <!-- Modern White Wind Turbines -->
+  <g transform="translate(1260, 460)">
+    <polygon points="-6,320 6,320 3,0 -3,0" fill="#101B35" />
+    <circle cx="0" cy="0" r="12" fill="#FF8A00" />
+    <line x1="0" y1="0" x2="0" y2="-180" stroke="#101B35" stroke-width="5" stroke-linecap="round" />
+    <line x1="0" y1="0" x2="155" y2="90" stroke="#101B35" stroke-width="5" stroke-linecap="round" />
+    <line x1="0" y1="0" x2="-155" y2="90" stroke="#101B35" stroke-width="5" stroke-linecap="round" />
+  </g>
+
+  <g transform="translate(1560, 500)">
+    <polygon points="-4,240 4,240 2,0 -2,0" fill="#5A6474" />
+    <circle cx="0" cy="0" r="8" fill="#101B35" />
+    <line x1="0" y1="0" x2="-80" y2="-120" stroke="#5A6474" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="0" y1="0" x2="135" y2="-30" stroke="#5A6474" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="0" y1="0" x2="-55" y2="120" stroke="#5A6474" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+
+  <!-- SDG Ring Seal Centerpiece -->
+  <g transform="translate(960, 300)">
+    <circle cx="0" cy="0" r="110" fill="#FFFFFF" stroke="#101B35" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#FF8A00" stroke-width="2" stroke-dasharray="10,6" />
+    <text x="0" y="-10" text-anchor="middle" font-family="'Playfair Display', serif" font-size="34" font-weight="bold" fill="#101B35">40%</text>
+    <text x="0" y="24" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="bold" fill="#FF8A00" letter-spacing="2">RENEWABLE TARGET</text>
+    <text x="0" y="46" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#5A6474">HORIZON 2027</text>
+  </g>
+
+  <!-- Editorial Info Cards -->
+  <g font-family="'Plus Jakarta Sans', sans-serif">
+    <rect x="80" y="80" width="420" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <text x="110" y="120" font-size="12" font-weight="bold" fill="#FF8A00" letter-spacing="2">SUSTAINABILITY &amp; ESG</text>
+    <text x="110" y="155" font-size="22" font-weight="bold" font-family="'Playfair Display', serif" fill="#101B35">UN SDG Alignment</text>
+    <text x="110" y="190" font-size="13" fill="#5A6474">Affordable &amp; Clean Energy • Responsible Operations</text>
+
+    <rect x="1420" y="80" width="420" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <text x="1450" y="120" font-size="12" font-weight="bold" fill="#101B35" letter-spacing="2">CIRCULAR ECONOMY</text>
+    <text x="1450" y="155" font-size="22" font-weight="bold" font-family="'Playfair Display', serif" fill="#101B35">Zero-Waste by 2030</text>
+    <text x="1450" y="190" font-size="13" fill="#5A6474">Manufacturing &amp; Agricultural Operating Ambition</text>
+  </g>
+
+  <text x="960" y="990" text-anchor="middle" font-family="'Playfair Display', serif" font-size="26" font-style="italic" fill="#101B35" fill-opacity="0.35">
+    Arise Hope Group • Environmental Stewardship &amp; Community Development
+  </text>
+</svg>
