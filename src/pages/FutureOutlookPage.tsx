@@ -44,7 +44,7 @@ export const FutureOutlookPage: React.FC = () => {
               A Forward-Looking Blueprint for Sustainable Conglomerate Scale.
             </h2>
             <p className="text-base sm:text-lg text-stone-600 leading-relaxed font-sans">
-              Our 2025–2030 roadmap leverages the combined balance sheet and technical expertise of our nine subsidiaries to capture high-margin, scalable market opportunities across Southern Africa.
+              Our 2025–2030 roadmap leverages the combined balance sheet and technical expertise of our ten subsidiaries to capture high-margin, scalable market opportunities across Southern Africa.
             </p>
           </div>
         </div>

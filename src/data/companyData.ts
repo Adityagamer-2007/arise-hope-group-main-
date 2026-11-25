@@ -7,8 +7,8 @@ export const COMPANY_INFO = {
   tagline: "A light that shines above Everything",
   heroHeadline: "Building Tomorrow. Creating Lasting Value.",
   heroSupportingText: "An integrated ecosystem of specialised businesses driving innovation, sustainable growth, and economic progress across Southern Africa and beyond.",
-  overview: "Arise Hope Group is a dynamic holding company that unites specialised businesses under a single strategic umbrella. Since its founding in 2020, the Group has built a diversified portfolio spanning engineering, resources, agriculture, real estate, automotive services, petroleum distribution, finance, and technology. Its integrated model delivers comprehensive solutions, drives sustainable growth, and creates lasting value for stakeholders.",
-  executiveSummary: "Arise Hope Group oversees nine industry-leading subsidiaries, each with dedicated leadership and P&L accountability. By combining deep sector expertise with centralised support functions in finance, legal, compliance, and human resources, the Group achieves resilience, scalability, and continuous innovation across all operations.",
+  overview: "Arise Hope Group is a dynamic holding company that unites specialised businesses under a single strategic umbrella. Since its founding in 2020, the Group has built a diversified portfolio spanning engineering, resources, agriculture, real estate, automotive services, petroleum distribution, import/export and freight forwarding, finance, and technology. Its integrated model delivers comprehensive solutions, drives sustainable growth, and creates lasting value for stakeholders.",
+  executiveSummary: "Arise Hope Group oversees ten industry-leading subsidiaries, each with dedicated leadership and P&L accountability. By combining deep sector expertise with centralised support functions in finance, legal, compliance, and human resources, the Group achieves resilience, scalability, and continuous innovation across all operations.",
   mission: "To empower specialised businesses through unified governance, operational excellence, and strategic investment, delivering sustainable value to clients, communities, and investors.",
   vision: "To be a globally recognised ecosystem that transforms industries and uplifts economies by integrating expertise, innovation, and responsible business practices.",
   coreValues: [
@@ -39,6 +39,15 @@ export const COMPANY_INFO = {
     website: "www.arisehopegroup.co.za",
     coordinates: "Johannesburg, South Africa (-26.0267, 27.9348)"
   }
+};
+
+export const MOTTO = {
+  full: "Rise Above, Inspired Changes, We are the Movement.",
+  parts: [
+    { title: "Rise Above", meaning: "We aim higher than limits and circumstances, building businesses with excellence, integrity and ambition." },
+    { title: "Inspired Changes", meaning: "We create positive change through innovation, enterprise, investment and opportunities that improve lives." },
+    { title: "We are the Movement", meaning: "We are a growing community of partners, employees and communities moving forward together." }
+  ]
 };
 
 export const SECTORS: Sector[] = [
@@ -352,7 +361,7 @@ export const SECTORS: Sector[] = [
     title: "Information Technology",
     tagline: "Enterprise Software, Systems Integration & Resilient Cybersecurity",
     shortDescription: "Custom cloud-native architectures, enterprise resource integration, AI-driven operational telemetry, and robust cyber defense.",
-    fullDescription: "Arise Hope Group's Information Technology division acts as the digital engine driving automation and intelligence across all nine subsidiaries. Developing custom ERP platforms, IoT telemetry sensors, and bank-grade cybersecurity frameworks, this division equips the entire Group with proprietary technological superiority.",
+    fullDescription: "Arise Hope Group's Information Technology division acts as the digital engine driving automation and intelligence across all ten subsidiaries. Developing custom ERP platforms, IoT telemetry sensors, and bank-grade cybersecurity frameworks, this division equips the entire Group with proprietary technological superiority.",
     officialActivities: [
       "Custom enterprise software development",
       "Cloud systems integration & architecture",
@@ -363,7 +372,7 @@ export const SECTORS: Sector[] = [
     capabilities: [
       {
         title: "Proprietary Group Enterprise Stack",
-        description: "Integrated real-time financial, supply chain, and operational telemetry dashboards connecting all 9 subsidiaries."
+        description: "Integrated real-time financial, supply chain, and operational telemetry dashboards connecting all 10 subsidiaries."
       },
       {
         title: "Bank-Grade Cyber Defense",
@@ -382,6 +391,44 @@ export const SECTORS: Sector[] = [
       { label: "Architecture", value: "Cloud-Native", subtext: "Custom ERP & Telemetry" },
       { label: "Security", value: "Bank-Grade SOC", subtext: "Zero-Trust Cyber Defense" },
       { label: "Roadmap", value: "AI Analytics", subtext: "Predictive Enterprise Intelligence" }
+    ]
+  },
+  {
+    id: "import-export-freight",
+    number: 10,
+    title: "Import, Export & Freight Forwarding",
+    tagline: "International Trade, Freight Forwarding & Cross-Border Cargo Coordination",
+    shortDescription: "Import and export trading, international freight forwarding and cargo coordination connecting South African and African businesses with global suppliers and markets.",
+    fullDescription: "The Import, Export & Freight Forwarding division connects African businesses with international suppliers and markets. It coordinates sourcing, shipping, documentation and cross-border cargo movement by sea, air and road. Customs clearing and other regulated activities are carried out through licensed partners until the required authorisations are held.",
+    officialActivities: [
+      "Import and export of goods and commodities",
+      "International freight forwarding (sea, air and road)",
+      "Customs documentation and clearing through licensed agents",
+      "Cross-border cargo and shipment coordination",
+      "Supplier sourcing, verification and procurement"
+    ],
+    capabilities: [
+      {
+        title: "Import & Export Trading",
+        description: "Sourcing and supplying agricultural, industrial and commercial products between South Africa, SADC, Asia, Europe and the Middle East."
+      },
+      {
+        title: "Freight Forwarding",
+        description: "Coordinated sea, air and road freight with shipment tracking and port and terminal coordination."
+      },
+      {
+        title: "Documentation & Compliance",
+        description: "Commercial invoices, shipping documents and customs support, with regulated clearing handled by licensed customs clearing agents."
+      }
+    ],
+    strategicAdvantage: "Gives the Group and its clients a single, coordinated route from international supplier to final delivery.",
+    image: "/assets/images/import_export_freight.svg",
+    imageType: "3d-composition",
+    accentColor: "#2E86DE",
+    keyStats: [
+      { label: "Services", value: "Import & Export", subtext: "Sea, Air & Road Freight" },
+      { label: "Markets", value: "SADC & Global", subtext: "Africa, Asia, Europe, Middle East" },
+      { label: "Compliance", value: "Licensed Partners", subtext: "Customs via Authorised Agents" }
     ]
   }
 ];
@@ -411,7 +458,7 @@ export const STRATEGIC_SYNERGIES: StrategicSynergy[] = [
   {
     id: "technology-enablement",
     title: "Technology Enablement",
-    sectorsInvolved: ["Information Technology", "All 9 Subsidiaries"],
+    sectorsInvolved: ["Information Technology", "All 10 Subsidiaries"],
     description: "Deploy custom software, IoT telemetry, and data analytics group-wide to enhance operational efficiency, safety, and quality.",
     impact: "Real-time visibility across supply chains, fleet locations, treasury positions, and project completion milestones."
   },
@@ -541,7 +588,7 @@ export const GOVERNANCE_FRAMEWORK = {
     },
     {
       title: "Managing Directors (Subsidiaries)",
-      focus: "Operational autonomy and dedicated P&L accountability across each of the nine specialized subsidiary businesses."
+      focus: "Operational autonomy and dedicated P&L accountability across each of the ten specialized subsidiary businesses."
     }
   ]
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigation } from '../../context/NavigationContext';
-import { SECTORS, COMPANY_INFO } from '../../data/companyData';
+import { SECTORS, COMPANY_INFO, MOTTO } from '../../data/companyData';
 import { 
   Phone, Mail, MapPin, MessageSquare, 
   ArrowUpRight, ShieldCheck 
@@ -31,6 +31,9 @@ export const Footer: React.FC = () => {
               <p className="text-xs sm:text-sm text-[#FF8A00] font-serif italic mt-0.5">
                 "{COMPANY_INFO.tagline}"
               </p>
+              <button onClick={() => navigate('/motto')} className="text-[11px] sm:text-xs text-stone-300 hover:text-white mt-1 font-sans text-left">
+                {MOTTO.full}
+              </button>
             </div>
           </div>
 
@@ -69,7 +72,7 @@ export const Footer: React.FC = () => {
               Corporate Overview
             </h4>
             <p className="text-xs sm:text-sm text-stone-300 leading-relaxed max-w-sm">
-              Established in 2020, Arise Hope Group unites nine specialized subsidiaries under disciplined corporate governance, accelerating industrial progress and sustainable value across Southern Africa.
+              Established in 2020, Arise Hope Group unites ten specialized subsidiaries under disciplined corporate governance, accelerating industrial progress and sustainable value across Southern Africa.
             </p>
             
             <div className="space-y-2 pt-1 text-xs text-stone-300">
@@ -104,7 +107,7 @@ export const Footer: React.FC = () => {
                     onClick={() => navigate(`/businesses/${sector.id}`)}
                     className="text-stone-300 hover:text-white transition-colors flex items-center gap-1.5 group text-left py-0.5"
                   >
-                    <span className="text-[10px] font-mono text-stone-500 group-hover:text-[#FF8A00]">0{sector.number}</span>
+                    <span className="text-[10px] font-mono text-stone-500 group-hover:text-[#FF8A00]">{String(sector.number).padStart(2, '0')}</span>
                     <span>{sector.title}</span>
                   </button>
                 </li>
@@ -115,7 +118,7 @@ export const Footer: React.FC = () => {
           {/* Col 3: Business Sectors (Part 2) */}
           <div className="space-y-2.5">
             <h4 className="text-[11px] font-sans uppercase tracking-wider text-[#FF8A00] font-bold">
-              Sectors (06 — 09)
+              Sectors (06 — 10)
             </h4>
             <ul className="space-y-1.5 text-xs">
               {SECTORS.slice(5).map((sector) => (
@@ -124,7 +127,7 @@ export const Footer: React.FC = () => {
                     onClick={() => navigate(`/businesses/${sector.id}`)}
                     className="text-stone-300 hover:text-white transition-colors flex items-center gap-1.5 group text-left py-0.5"
                   >
-                    <span className="text-[10px] font-mono text-stone-500 group-hover:text-[#FF8A00]">0{sector.number}</span>
+                    <span className="text-[10px] font-mono text-stone-500 group-hover:text-[#FF8A00]">{String(sector.number).padStart(2, '0')}</span>
                     <span>{sector.title}</span>
                   </button>
                 </li>
@@ -147,6 +150,11 @@ export const Footer: React.FC = () => {
               Corporate Governance
             </h4>
             <ul className="space-y-1.5 text-xs text-stone-300">
+              <li>
+                <button onClick={() => navigate('/motto')} className="hover:text-white transition-colors py-0.5">
+                  Our Motto
+                </button>
+              </li>
               <li>
                 <button onClick={() => navigate('/about')} className="hover:text-white transition-colors py-0.5">
                   About the Group

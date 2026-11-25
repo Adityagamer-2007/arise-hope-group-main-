@@ -106,8 +106,8 @@ export const Hero3DScene: React.FC = () => {
     const innerGold = new THREE.Mesh(innerGoldGeo, goldMaterial);
     armillaryGroup.add(innerGold);
 
-    // 9 Subtle Celestial Sector Beacons
-    const beaconCount = 9;
+    // 10 Subtle Celestial Sector Beacons
+    const beaconCount = 10;
     const beacons: THREE.Mesh[] = [];
     for (let i = 0; i < beaconCount; i++) {
       const angle = (i / beaconCount) * Math.PI * 2;

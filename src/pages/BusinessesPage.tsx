@@ -15,7 +15,7 @@ export const BusinessesPage: React.FC = () => {
       return ['construction-engineering', 'civil-engineering', 'mining-energy'].includes(sector.id);
     }
     if (activeFilter === 'industry') {
-      return ['agriculture', 'property-investment', 'automotive-repair', 'petroleum-products'].includes(sector.id);
+      return ['agriculture', 'property-investment', 'automotive-repair', 'petroleum-products', 'import-export-freight'].includes(sector.id);
     }
     if (activeFilter === 'finance-tech') {
       return ['banking-financial', 'information-technology'].includes(sector.id);
@@ -27,7 +27,7 @@ export const BusinessesPage: React.FC = () => {
     <div className="min-h-screen bg-[#F8F7F3]">
       <PageHeader
         badge="Diversified Portfolio"
-        title="Nine Specialized Sectors. One Strategic Purpose."
+        title="Ten Specialized Sectors. One Strategic Purpose."
         subtitle="Explore our comprehensive ecosystem of subsidiaries delivering turnkey infrastructure, industrial resources, agro-processing, energy distribution, and advanced technology across Southern Africa."
         breadcrumbs={[
           { label: 'Home', path: '/' },
@@ -47,9 +47,9 @@ export const BusinessesPage: React.FC = () => {
 
             <div className="flex flex-wrap items-center gap-2">
               {[
-                { id: 'all', label: 'All 9 Sectors' },
+                { id: 'all', label: 'All 10 Sectors' },
                 { id: 'engineering', label: 'Engineering & Resources (01-03)' },
-                { id: 'industry', label: 'Industry & Logistics (04-07)' },
+                { id: 'industry', label: 'Industry, Trade & Logistics (04-07, 10)' },
                 { id: 'finance-tech', label: 'Finance & Technology (08-09)' }
               ].map((tab) => (
                 <button

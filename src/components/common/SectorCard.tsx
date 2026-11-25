@@ -30,7 +30,7 @@ export const SectorCard: React.FC<SectorCardProps> = ({ sector }) => {
         {/* Top Badges */}
         <div className="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between">
           <span className="px-2.5 py-1 rounded-md text-[10px] font-mono font-bold tracking-wider uppercase bg-[#101B35]/90 text-white backdrop-blur-xs">
-            SECTOR 0{sector.number}
+            SECTOR {String(sector.number).padStart(2, '0')}
           </span>
 
           <span className="text-[10px] font-sans font-medium px-2 py-0.5 rounded bg-white/90 text-stone-700 backdrop-blur-xs shadow-xs">

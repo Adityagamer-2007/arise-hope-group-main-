@@ -35,7 +35,7 @@ export const SynergyEcosystem: React.FC = () => {
             How Our Ecosystem Works Together.
           </h2>
           <p className="mt-3 sm:mt-4 text-sm sm:text-base text-stone-600 leading-relaxed font-sans">
-            Arise Hope Group's nine specialized subsidiaries do not operate in silos. Through structured synergies, each business amplifies the capability, procurement power, and balance sheet of the collective group.
+            Arise Hope Group's ten specialized subsidiaries do not operate in silos. Through structured synergies, each business amplifies the capability, procurement power, and balance sheet of the collective group.
           </p>
         </div>
 

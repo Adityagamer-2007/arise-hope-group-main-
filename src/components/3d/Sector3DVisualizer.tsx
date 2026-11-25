@@ -134,6 +134,18 @@ export const Sector3DVisualizer: React.FC<Sector3DVisualizerProps> = ({ sectorId
         break;
       }
 
+      case 'import-export-freight': {
+        const tradeGroup = new THREE.Group();
+        const globe = new THREE.Mesh(new THREE.SphereGeometry(2.6, 24, 24), new THREE.MeshStandardMaterial({ color: colorHex, wireframe: true, emissive: colorHex, emissiveIntensity: 0.25 }));
+        const route1 = new THREE.Mesh(new THREE.TorusGeometry(3.8, 0.07, 16, 80), new THREE.MeshBasicMaterial({ color: 0xFF8A00 }));
+        route1.rotation.x = Math.PI / 3;
+        const route2 = new THREE.Mesh(new THREE.TorusGeometry(3.8, 0.07, 16, 80), new THREE.MeshBasicMaterial({ color: 0xFFC400 }));
+        route2.rotation.y = Math.PI / 3;
+        tradeGroup.add(globe, route1, route2);
+        mainMesh = tradeGroup;
+        break;
+      }
+
       case 'banking-financial': {
         const bankGroup = new THREE.Group();
         for (let i = 0; i < 3; i++) {

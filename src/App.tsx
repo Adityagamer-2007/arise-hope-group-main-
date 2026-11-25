@@ -10,6 +10,7 @@ import { SustainabilityPage } from './pages/SustainabilityPage';
 import { GovernancePage } from './pages/GovernancePage';
 import { FutureOutlookPage } from './pages/FutureOutlookPage';
 import { ContactPage } from './pages/ContactPage';
+import { MottoPage } from './pages/MottoPage';
 import { CorporateProfilePage } from './pages/CorporateProfilePage';
 
 export const App: React.FC = () => {
@@ -43,6 +44,9 @@ export const App: React.FC = () => {
     }
     if (path === '/corporate-profile') {
       return <CorporateProfilePage />;
+    }
+    if (path === '/motto') {
+      return <MottoPage />;
     }
     if (path === '/contact') {
       return <ContactPage />;

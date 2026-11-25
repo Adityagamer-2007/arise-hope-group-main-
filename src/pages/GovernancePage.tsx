@@ -12,7 +12,7 @@ export const GovernancePage: React.FC = () => {
       <PageHeader
         badge="Corporate Governance"
         title="Disciplined Oversight. Uncompromising Ethics."
-        subtitle="A robust corporate governance framework featuring an independent board chaired by the founder, structured board committees, and clear lines of accountability across our nine operating subsidiaries."
+        subtitle="A robust corporate governance framework featuring an independent board chaired by the founder, structured board committees, and clear lines of accountability across our ten operating subsidiaries."
         breadcrumbs={[
           { label: 'Home', path: '/' },
           { label: 'Corporate Governance' }

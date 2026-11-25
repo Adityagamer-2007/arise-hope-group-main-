@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigation } from '../context/NavigationContext';
-import { COMPANY_INFO, SECTORS, GOVERNANCE_FRAMEWORK } from '../data/companyData';
+import { COMPANY_INFO, SECTORS, GOVERNANCE_FRAMEWORK, MOTTO } from '../data/companyData';
 import { Hero3DScene } from '../components/3d/Hero3DScene';
 import { SectorCard } from '../components/common/SectorCard';
 import { SynergyEcosystem } from '../components/home/SynergyEcosystem';
@@ -74,7 +74,7 @@ export const HomePage: React.FC = () => {
               <div className="text-[10px] sm:text-[11px] font-sans font-semibold text-stone-500 uppercase tracking-wider mt-0.5">Year Established</div>
             </div>
             <div className="p-4 rounded-xl bg-white border border-stone-200 shadow-xs">
-              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#FF8A00]">9 Sectors</div>
+              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#FF8A00]">10 Sectors</div>
               <div className="text-[10px] sm:text-[11px] font-sans font-semibold text-stone-500 uppercase tracking-wider mt-0.5">Specialised Subsidiaries</div>
             </div>
             <div className="p-4 rounded-xl bg-white border border-stone-200 shadow-xs">
@@ -91,6 +91,23 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* 2. INTRODUCTION — WHO WE ARE (PURE WHITE SECTION) */}
+      {/* MOTTO BANNER */}
+      <section className="py-14 sm:py-20 bg-[#101B35] text-white text-center border-b border-stone-800">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="text-[11px] font-sans uppercase tracking-wider text-[#FF8A00] font-bold">Our Motto</span>
+          <h2 className="mt-4 text-3xl sm:text-5xl font-serif font-bold tracking-tight leading-tight">
+            {MOTTO.parts[0].title}, {MOTTO.parts[1].title}, <span className="italic font-normal text-[#FF8A00]">{MOTTO.parts[2].title}.</span>
+          </h2>
+          <button
+            onClick={() => navigate('/motto')}
+            className="mt-7 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/15 border border-white/15 text-xs font-semibold uppercase tracking-wider inline-flex items-center gap-2 active:scale-95"
+          >
+            <span>Read Our Motto</span>
+            <ArrowUpRight className="w-4 h-4 text-[#FF8A00]" />
+          </button>
+        </div>
+      </section>
+
       <section className="py-16 sm:py-24 bg-white border-b border-stone-200 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">

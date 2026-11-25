@@ -25,7 +25,7 @@ export const AboutPage: React.FC = () => {
     },
     {
       title: "Diversified Revenue Architecture",
-      description: "A well-balanced 9-sector portfolio across counter-cyclical and high-growth industries that mitigates localized macroeconomic shocks."
+      description: "A well-balanced 10-sector portfolio across counter-cyclical and high-growth industries that mitigates localized macroeconomic shocks."
     },
     {
       title: "Agile Decision-Making Governance",
@@ -38,7 +38,7 @@ export const AboutPage: React.FC = () => {
       <PageHeader
         badge="About Arise Hope Group"
         title="Transforming Industries. Uplifting Economies."
-        subtitle="Established in 2020, Arise Hope Group is a premier South African holding company uniting nine industry-leading subsidiaries under disciplined corporate governance."
+        subtitle="Established in 2020, Arise Hope Group is a premier South African holding company uniting ten industry-leading subsidiaries under disciplined corporate governance."
         breadcrumbs={[
           { label: 'Home', path: '/' },
           { label: 'About Us' }
@@ -104,7 +104,7 @@ export const AboutPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between py-1.5 border-b border-stone-100">
                     <span className="text-stone-500">Subsidiaries</span>
-                    <span className="font-semibold text-[#FF8A00]">9 Operating Sectors</span>
+                    <span className="font-semibold text-[#FF8A00]">10 Operating Sectors</span>
                   </div>
                   <div className="flex justify-between py-1.5 border-b border-stone-100">
                     <span className="text-stone-500">Geographic Footprint</span>
@@ -212,7 +212,7 @@ export const AboutPage: React.FC = () => {
               PORTFOLIO ARCHITECTURE
             </span>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#101B35]">
-              Explore Our Nine Specialised Sectors.
+              Explore Our Ten Specialised Sectors.
             </h2>
             <p className="text-sm sm:text-base text-stone-600 font-sans max-w-xl mx-auto">
               From civil engineering to wholesale petroleum, precision farming, and custom software systems.
@@ -222,7 +222,7 @@ export const AboutPage: React.FC = () => {
                 onClick={() => navigate('/businesses')}
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#101B35] hover:bg-[#1B2C56] text-white font-semibold text-xs uppercase tracking-wider shadow-sm transition-all active:scale-95"
               >
-                <span>View All 9 Sectors</span>
+                <span>View All 10 Sectors</span>
                 <ArrowRight className="w-4 h-4 text-[#FF8A00]" />
               </button>
             </div>

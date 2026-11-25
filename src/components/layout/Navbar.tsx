@@ -4,7 +4,7 @@ import { SECTORS, COMPANY_INFO } from '../../data/companyData';
 import { 
   Menu, X, ChevronDown, ChevronRight, ArrowUpRight, Phone, Mail, 
   Building2, ShieldCheck, Cpu, HardHat, Compass, 
-  Sprout, Fuel, Landmark, Wrench, MessageSquare 
+  Sprout, Fuel, Landmark, Wrench, MessageSquare, Ship 
 } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
@@ -20,6 +20,16 @@ export const Navbar: React.FC = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [currentPath]);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setMobileMenuOpen(false); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
   }, []);
 
   // Lock body scroll when mobile menu is active
@@ -43,6 +53,7 @@ export const Navbar: React.FC = () => {
       case 'property-investment': return Building2;
       case 'automotive-repair': return Wrench;
       case 'petroleum-products': return Fuel;
+      case 'import-export-freight': return Ship;
       case 'banking-financial': return Landmark;
       case 'information-technology': return Cpu;
       default: return Building2;
@@ -52,6 +63,7 @@ export const Navbar: React.FC = () => {
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'About Us', path: '/about' },
+    { label: 'Our Motto', path: '/motto' },
     { label: 'Our Businesses', path: '/businesses', hasMegaMenu: true },
     { label: 'Sustainability', path: '/sustainability' },
     { label: 'Governance', path: '/governance' },
@@ -66,6 +78,7 @@ export const Navbar: React.FC = () => {
   };
 
   return (
+    <>
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled || mobileMenuOpen
@@ -135,7 +148,7 @@ export const Navbar: React.FC = () => {
                                 Conglomerate Business Sectors
                               </h4>
                               <p className="text-sm font-serif text-[#101B35]">
-                                Nine Diversified Subsidiaries Across Southern Africa
+                                Ten Diversified Subsidiaries Across Southern Africa
                               </p>
                             </div>
                             <button
@@ -166,7 +179,7 @@ export const Navbar: React.FC = () => {
                                   </div>
                                   <div className="min-w-0">
                                     <div className="flex items-center gap-1.5">
-                                      <span className="text-[10px] font-mono text-stone-400">0{sector.number}</span>
+                                      <span className="text-[10px] font-mono text-stone-400">{String(sector.number).padStart(2, '0')}</span>
                                       <h5 className="text-xs font-semibold text-[#101B35] truncate group-hover/item:text-[#FF8A00] transition-colors">
                                         {sector.title}
                                       </h5>
@@ -203,7 +216,7 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Desktop Right Action CTA */}
-          <div className="hidden xl:flex items-center gap-3">
+          <div className="hidden 2xl:flex items-center gap-3">
             <button
               onClick={() => navigate('/contact')}
               className="px-3 2xl:px-4 py-2.5 rounded-lg bg-[#101B35] hover:bg-[#1B2C56] text-white font-medium text-[11px] xl:text-xs tracking-wider uppercase transition-all shadow-sm flex items-center gap-2 active:scale-95 whitespace-nowrap"
@@ -235,9 +248,18 @@ export const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Drawer Menu — Classic Light Theme */}
-      {mobileMenuOpen && (
-        <div className="xl:hidden fixed inset-x-0 top-[57px] sm:top-[65px] bottom-0 bg-[#F8F7F3] border-t border-stone-200 px-4 py-5 overflow-y-auto z-40 safe-bottom flex flex-col justify-between">
+    </header>
+
+      {/* Mobile Drawer Menu — slides in from the right, sits outside header */}
+      <div
+        className={`xl:hidden fixed inset-0 z-40 ${mobileMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
+        aria-hidden={!mobileMenuOpen}
+      >
+        <div
+          onClick={() => setMobileMenuOpen(false)}
+          className={`absolute inset-0 bg-[#101B35]/40 transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100' : 'opacity-0'}`}
+        />
+        <div className={`absolute right-0 top-0 h-[100dvh] w-[86%] max-w-sm bg-[#F8F7F3] border-l border-stone-200 shadow-2xl pt-[68px] sm:pt-[76px] px-4 pb-[max(1.25rem,env(safe-area-inset-bottom))] overflow-y-auto overscroll-contain flex flex-col justify-between transition-transform duration-300 ease-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="space-y-1">
             
             {navLinks.map((link) => {
@@ -262,7 +284,7 @@ export const Navbar: React.FC = () => {
                       <button
                         onClick={() => setMobileSectorsOpen(!mobileSectorsOpen)}
                         className="px-3 py-2.5 rounded-xl bg-white border border-stone-200 text-stone-600 hover:text-[#101B35]"
-                        aria-label="Expand 9 sectors"
+                        aria-label="Expand 10 sectors"
                       >
                         <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileSectorsOpen ? 'rotate-180 text-[#FF8A00]' : ''}`} />
                       </button>
@@ -289,7 +311,7 @@ export const Navbar: React.FC = () => {
                               </div>
                               <div className="min-w-0 flex-1">
                                 <div className="text-xs font-semibold text-[#101B35] truncate">
-                                  0{sector.number} • {sector.title}
+                                  {String(sector.number).padStart(2, '0')} • {sector.title}
                                 </div>
                                 <div className="text-[10px] text-stone-500 truncate">
                                   {sector.tagline}
@@ -357,7 +379,7 @@ export const Navbar: React.FC = () => {
             </div>
           </div>
         </div>
-      )}
-    </header>
+      </div>
+    </>
   );
 };

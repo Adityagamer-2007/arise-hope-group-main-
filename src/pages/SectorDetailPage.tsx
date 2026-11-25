@@ -42,7 +42,7 @@ export const SectorDetailPage: React.FC<SectorDetailPageProps> = ({ sectorId }) 
             <div className="lg:col-span-7 space-y-4 sm:space-y-5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-sans font-bold tracking-wider uppercase bg-white border border-stone-200 text-[#101B35] shadow-xs">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#FF8A00]" />
-                SECTOR 0{sector.number} • OFFICIAL SUBSIDIARY
+                SECTOR {String(sector.number).padStart(2, '0')} • OFFICIAL SUBSIDIARY
               </div>
 
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#101B35] tracking-tight leading-[1.1]">
@@ -225,7 +225,7 @@ export const SectorDetailPage: React.FC<SectorDetailPageProps> = ({ sectorId }) 
               <ArrowLeft className="w-4 h-4 text-stone-400 group-hover:text-[#FF8A00] group-hover:-translate-x-1 transition-all shrink-0" />
               <div className="min-w-0">
                 <span className="text-[9px] font-mono uppercase tracking-wider text-stone-400 block">
-                  Previous Sector (0{prevSector.number})
+                  Previous Sector ({String(prevSector.number).padStart(2, '0')})
                 </span>
                 <span className="text-xs sm:text-sm font-serif font-bold text-[#101B35] truncate block group-hover:text-[#FF8A00]">
                   {prevSector.title}
@@ -239,7 +239,7 @@ export const SectorDetailPage: React.FC<SectorDetailPageProps> = ({ sectorId }) 
             >
               <div className="min-w-0">
                 <span className="text-[9px] font-mono uppercase tracking-wider text-stone-400 block">
-                  Next Sector (0{nextSector.number})
+                  Next Sector ({String(nextSector.number).padStart(2, '0')})
                 </span>
                 <span className="text-xs sm:text-sm font-serif font-bold text-[#101B35] truncate block group-hover:text-[#101B35]">
                   {nextSector.title}
